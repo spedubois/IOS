@@ -10,12 +10,14 @@ import UIKit
 
 class mainView : UIView
 {
+    var mySlider : customSlider?
+    
     var hourLabel : UILabel?
     var minLabel : UILabel?
     var secLabel : UILabel?
     
     var timeString : String = "0 : 0 : 0"
-    var days : String = ""
+    var days : String = "Days: "
     
     var hour : Double?
     var min : Double?
@@ -66,6 +68,8 @@ class mainView : UIView
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        mySlider = customSlider()
+        mySlider?.frame = CGRect(x: 0, y: 315, width: 320, height: 70)
         
         textLayer = CATextLayer()
         textLayerDays = CATextLayer()
@@ -185,6 +189,7 @@ class mainView : UIView
         addSubview(friday!)
         addSubview(saturday!)
         addSubview(sunday!)
+        addSubview(mySlider!)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -299,7 +304,7 @@ class mainView : UIView
                 sunday?.isSelected = true
             }
         }
-        days = ""
+        days = "Days: "
         for day in daySet!
         {
             if(day.isSelected)

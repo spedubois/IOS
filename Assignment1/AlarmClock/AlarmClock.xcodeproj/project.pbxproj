@@ -11,6 +11,7 @@
 		08E4173B20295CCD00272CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E4173A20295CCD00272CF9 /* Assets.xcassets */; };
 		08E417462029689F00272CF9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E417452029689F00272CF9 /* MainView.swift */; };
 		08E4174820296C9A00272CF9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E4174720296C9A00272CF9 /* Default-568h@2x.png */; };
+		78455CFD202A20C6007075FF /* MyCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78455CFC202A20C6007075FF /* MyCustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		08E4173F20295CD400272CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E417452029689F00272CF9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		08E4174720296C9A00272CF9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		78455CFC202A20C6007075FF /* MyCustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		08E4173220295CC300272CF9 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				78455CFC202A20C6007075FF /* MyCustomSlider.swift */,
 				08E4173320295CC400272CF9 /* AppDelegate.swift */,
 				08E417452029689F00272CF9 /* MainView.swift */,
 				08E4173A20295CCD00272CF9 /* Assets.xcassets */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78455CFD202A20C6007075FF /* MyCustomSlider.swift in Sources */,
 				08E4173420295CC400272CF9 /* AppDelegate.swift in Sources */,
 				08E417462029689F00272CF9 /* MainView.swift in Sources */,
 			);

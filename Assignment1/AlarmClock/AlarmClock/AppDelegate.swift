@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController?.view.backgroundColor = UIColor.lightGray
         window?.makeKeyAndVisible()
         let myMainWindow : mainView = mainView()
-        myMainWindow.frame = CGRect(x: 0, y: 20, width: (window?.rootViewController?.view.bounds.maxX)!, height: (window?.rootViewController?.view.bounds.maxY)!)
+        myMainWindow.frame = CGRect(x: 0, y: 20, width: (window?.rootViewController?.view.bounds.width)!, height: (window?.rootViewController?.view.bounds.height)!)
         window?.rootViewController?.view.addSubview(myMainWindow)
         
         return true
