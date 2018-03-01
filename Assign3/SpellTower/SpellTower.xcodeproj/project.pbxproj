@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780A8DC42047757B00DC14FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DC32047757B00DC14FF /* AppDelegate.swift */; };
+		780A8DCB2047757B00DC14FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DCA2047757B00DC14FF /* Assets.xcassets */; };
+		780A8DF2204775FB00DC14FF /* CellBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF1204775FB00DC14FF /* CellBlock.swift */; };
+		780A8DF42047777800DC14FF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF32047777800DC14FF /* Game.swift */; };
+		780A8DF62047798D00DC14FF /* Project 3 - Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */; };
+		780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DF72047799A00DC14FF /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		780A8DD52047757B00DC14FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780A8DB82047757A00DC14FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780A8DBF2047757A00DC14FF;
+			remoteInfo = SpellTower;
+		};
+		780A8DE02047757B00DC14FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780A8DB82047757A00DC14FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780A8DBF2047757A00DC14FF;
+			remoteInfo = SpellTower;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		780A8DC02047757A00DC14FF /* SpellTower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellTower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A8DC32047757B00DC14FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		780A8DCA2047757B00DC14FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		780A8DCF2047757B00DC14FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780A8DD42047757B00DC14FF /* SpellTowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellTowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A8DDF2047757B00DC14FF /* SpellTowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellTowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A8DF1204775FB00DC14FF /* CellBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBlock.swift; sourceTree = "<group>"; };
+		780A8DF32047777800DC14FF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Project 3 - Dictionary.txt"; path = "../../../../../../Downloads/Project 3 - Dictionary.txt"; sourceTree = "<group>"; };
+		780A8DF72047799A00DC14FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780A8DBD2047757A00DC14FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DD12047757B00DC14FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DDC2047757B00DC14FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780A8DB72047757A00DC14FF = {
+			isa = PBXGroup;
+			children = (
+				780A8DF72047799A00DC14FF /* Default-568h@2x.png */,
+				780A8DC22047757A00DC14FF /* SpellTower */,
+				780A8DC12047757A00DC14FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		780A8DC12047757A00DC14FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780A8DC02047757A00DC14FF /* SpellTower.app */,
+				780A8DD42047757B00DC14FF /* SpellTowerTests.xctest */,
+				780A8DDF2047757B00DC14FF /* SpellTowerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780A8DC22047757A00DC14FF /* SpellTower */ = {
+			isa = PBXGroup;
+			children = (
+				780A8DF1204775FB00DC14FF /* CellBlock.swift */,
+				780A8DF32047777800DC14FF /* Game.swift */,
+				780A8DC32047757B00DC14FF /* AppDelegate.swift */,
+				780A8DCA2047757B00DC14FF /* Assets.xcassets */,
+				780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */,
+				780A8DCF2047757B00DC14FF /* Info.plist */,
+			);
+			path = SpellTower;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780A8DBF2047757A00DC14FF /* SpellTower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A8DE82047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTower" */;
+			buildPhases = (
+				780A8DBC2047757A00DC14FF /* Sources */,
+				780A8DBD2047757A00DC14FF /* Frameworks */,
+				780A8DBE2047757A00DC14FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellTower;
+			productName = SpellTower;
+			productReference = 780A8DC02047757A00DC14FF /* SpellTower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		780A8DD32047757B00DC14FF /* SpellTowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A8DEB2047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTowerTests" */;
+			buildPhases = (
+				780A8DD02047757B00DC14FF /* Sources */,
+				780A8DD12047757B00DC14FF /* Frameworks */,
+				780A8DD22047757B00DC14FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780A8DD62047757B00DC14FF /* PBXTargetDependency */,
+			);
+			name = SpellTowerTests;
+			productName = SpellTowerTests;
+			productReference = 780A8DD42047757B00DC14FF /* SpellTowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		780A8DDE2047757B00DC14FF /* SpellTowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A8DEE2047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTowerUITests" */;
+			buildPhases = (
+				780A8DDB2047757B00DC14FF /* Sources */,
+				780A8DDC2047757B00DC14FF /* Frameworks */,
+				780A8DDD2047757B00DC14FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780A8DE12047757B00DC14FF /* PBXTargetDependency */,
+			);
+			name = SpellTowerUITests;
+			productName = SpellTowerUITests;
+			productReference = 780A8DDF2047757B00DC14FF /* SpellTowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780A8DB82047757A00DC14FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = u0482113;
+				TargetAttributes = {
+					780A8DBF2047757A00DC14FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					780A8DD32047757B00DC14FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 780A8DBF2047757A00DC14FF;
+					};
+					780A8DDE2047757B00DC14FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 780A8DBF2047757A00DC14FF;
+					};
+				};
+			};
+			buildConfigurationList = 780A8DBB2047757A00DC14FF /* Build configuration list for PBXProject "SpellTower" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 780A8DB72047757A00DC14FF;
+			productRefGroup = 780A8DC12047757A00DC14FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				780A8DBF2047757A00DC14FF /* SpellTower */,
+				780A8DD32047757B00DC14FF /* SpellTowerTests */,
+				780A8DDE2047757B00DC14FF /* SpellTowerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780A8DBE2047757A00DC14FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A8DCB2047757B00DC14FF /* Assets.xcassets in Resources */,
+				780A8DF62047798D00DC14FF /* Project 3 - Dictionary.txt in Resources */,
+				780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DD22047757B00DC14FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DDD2047757B00DC14FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780A8DBC2047757A00DC14FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A8DC42047757B00DC14FF /* AppDelegate.swift in Sources */,
+				780A8DF42047777800DC14FF /* Game.swift in Sources */,
+				780A8DF2204775FB00DC14FF /* CellBlock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DD02047757B00DC14FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A8DDB2047757B00DC14FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780A8DD62047757B00DC14FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780A8DBF2047757A00DC14FF /* SpellTower */;
+			targetProxy = 780A8DD52047757B00DC14FF /* PBXContainerItemProxy */;
+		};
+		780A8DE12047757B00DC14FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780A8DBF2047757A00DC14FF /* SpellTower */;
+			targetProxy = 780A8DE02047757B00DC14FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		780A8DE62047757B00DC14FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		780A8DE72047757B00DC14FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		780A8DE92047757B00DC14FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		780A8DEA2047757B00DC14FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		780A8DEC2047757B00DC14FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellTower.app/SpellTower";
+			};
+			name = Debug;
+		};
+		780A8DED2047757B00DC14FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTowerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellTower.app/SpellTower";
+			};
+			name = Release;
+		};
+		780A8DEF2047757B00DC14FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpellTower;
+			};
+			name = Debug;
+		};
+		780A8DF02047757B00DC14FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpellTowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DuBois.SpellTowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpellTower;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780A8DBB2047757A00DC14FF /* Build configuration list for PBXProject "SpellTower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A8DE62047757B00DC14FF /* Debug */,
+				780A8DE72047757B00DC14FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A8DE82047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A8DE92047757B00DC14FF /* Debug */,
+				780A8DEA2047757B00DC14FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A8DEB2047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A8DEC2047757B00DC14FF /* Debug */,
+				780A8DED2047757B00DC14FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A8DEE2047757B00DC14FF /* Build configuration list for PBXNativeTarget "SpellTowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A8DEF2047757B00DC14FF /* Debug */,
+				780A8DF02047757B00DC14FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780A8DB82047757A00DC14FF /* Project object */;
+}
