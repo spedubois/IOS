@@ -27,7 +27,8 @@ class game {
     func populateGameBoard()
     {
         var i = 0
-        while(i < 4)
+        // Populate the game board with blank squares placed randomly
+        while(i < 10)
         {
             let pickSpot = Int(arc4random_uniform(UInt32(108)))
             if(gameBoard[pickSpot] != nil)
@@ -38,44 +39,94 @@ class game {
             i+=1
         }
         
+        // Populate the board with the scrambled words found in fillWords()
         for word in words
         {
             placeWordOnBoard(word: word)
         }
+        
+        // Fill the remaining spots on the board with highlighted cells of a random character
+        let letters = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        for i in 0..<108
+        {
+            if(gameBoard[i] == nil)
+            {
+                let letter = letters[Int(arc4random_uniform(UInt32(letters.count)))]
+                gameBoard[i] = CellBlock(letter: String(letter), type: "highlighted")
+            }
+        }
+        
     }
     
+    /*
+     Places a word on the game board
+    */
     func placeWordOnBoard(word: String)
     {
+        // Convert word to character array. Needed for randomly placing characters if needed
         let charArray = Array(word)
+        
+        // Boolean used to determine if a start index was found for placing the word
         var startFound = false
+        
+        // Counter used to determine if there is ANY place a word can be placed on the board. If not, then we randomly place the words characers
+        // on the board.
         var tryCount = 0
+        
+        // While a word hasn't been placed....
         while(!startFound)
         {
-            if(tryCount == 30){
+            // If we have tried 10 times to place a word, and no spot could be found, randomly place the characters on the board.
+            if(tryCount == 10){
                 placeRandomly(wordToPlace: charArray)
                 startFound = true
                 continue
             }
+            
+            // Pick a random spot on the board to start the word, if it is occupied already, continue the loop.
             let pickStart = Int(arc4random_uniform(108))
             if(gameBoard[pickStart] != nil)
             {
                 continue
             }
+            
+            // Initial path for placing the characters of the string.
             let path : [Int?] = Array(repeatElement(-1, count: word.count))
+            
+            // Call findWordPath to see if there is a valid path, from the start index, for the word to fit. If not, try again until we have tried
+            // 10 times.
             let newPath = findWordPath(startIndex: pickStart, count: 0, pathArray: path as! [Int])
             if(!newPath.0){
                 tryCount += 1
                 continue
             }
+            
+            // Once a path has been found, place the characters of the string into the game board based on the path found.
             for i in 0..<charArray.count
             {
                 gameBoard[newPath.1[i]] = CellBlock(letter: String(charArray[i]), type: "active")
             }
+            // Confirm that the word was placed, and end the loop.
             startFound = true
         }
-       
-        
-        
+    }
+    
+    /*
+     Randomly place the characters of a word into the board. Only called when there is no room left on the board to fit the word.
+     */
+    func placeRandomly(wordToPlace: [Character])
+    {
+        var index = 0
+        while(index < wordToPlace.count)
+        {
+            let pickStart = Int(arc4random_uniform(108))
+            if(gameBoard[pickStart] != nil)
+            {
+                continue
+            }
+            gameBoard[pickStart] = CellBlock(letter: String(wordToPlace[index]), type: "active")
+            index += 1
+        }
     }
     
     /*
@@ -232,8 +283,8 @@ class game {
                 self.dictionary.append(line)
             })
         }
-        let numWords = self.dictionary.count
-        print("num words: \(numWords)") // DELETE THIS ON FINAL
+        //let numWords = self.dictionary.count
+        //print("num words: \(numWords)") // DELETE THIS ON FINAL
     }
     
     /*
@@ -246,13 +297,13 @@ class game {
         {
             let pickWordRand = Int(arc4random_uniform(UInt32(self.dictionary.count)))
             let nextWord = dictionary[pickWordRand]
-            if(wordLengthTotal + nextWord.count > 94){
+            if(wordLengthTotal + nextWord.count > 94 || wordLengthTotal + nextWord.count == 93){
                 continue
             }
-            words.append(scramble(word: nextWord))
+            words.append(scramble(word: nextWord).uppercased())
             wordLengthTotal += nextWord.count
         }
-        print("total length of words: \(wordLengthTotal)") // DELETE THIS ON FINAL
+        //print("total length of words: \(wordLengthTotal)") // DELETE THIS ON FINAL
     }
     
     /*
