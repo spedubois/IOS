@@ -47,37 +47,74 @@ class game {
     func placeWordOnBoard(word: String)
     {
         let charArray = Array(word)
-        var i = 0
         var startFound = false
-        var indexToPlace = 0
+        var tryCount = 0
         while(!startFound)
         {
-            let pickStart = Int(arc4random_uniform(109))
+            if(tryCount == 30){
+                placeRandomly(wordToPlace: charArray)
+                startFound = true
+                continue
+            }
+            let pickStart = Int(arc4random_uniform(108))
             if(gameBoard[pickStart] != nil)
             {
                 continue
             }
+            let path : [Int?] = Array(repeatElement(-1, count: word.count))
+            let newPath = findWordPath(startIndex: pickStart, count: 0, pathArray: path as! [Int])
+            if(!newPath.0){
+                tryCount += 1
+                continue
+            }
+            for i in 0..<charArray.count
+            {
+                gameBoard[newPath.1[i]] = CellBlock(letter: String(charArray[i]), type: "active")
+            }
             startFound = true
-            indexToPlace = pickStart
         }
        
-        var path : [Int?] = Array(repeatElement(-1, count: word.count))
-        path = findWordPath(startIndex: indexToPlace, count: 0, pathArray: path as! [Int]).1
+        
         
     }
     
+    /*
+     Recursively looks for a path to place a word on the game board. If a path is found that the word can be placed in, returns the path, and true.
+     INPUT:
+        startIndex: The inital index of the word
+        count: The length of the word being placed
+        pathArray: The path that has been found so far
+     RETURNS:
+        true and the path found
+        false and the start index if no path can be found
+     */
     func findWordPath(startIndex: Int, count: Int, pathArray: [Int]) -> (Bool, [Int])
     {
         var newPathArray = pathArray
+        // Base case, if we are on the last character of the string.
         if(count == pathArray.count - 1)
         {
+            // If the index is empty and we haven't used the index so far in the path, add the index to the path
             if(gameBoard[startIndex] == nil && !newPathArray.contains(startIndex)){
                 newPathArray[count] = startIndex
                 return (true, newPathArray)
             }
             return (false, newPathArray)
         }
+        
+        // Look for an index to place the next character.
         newPathArray[count] = startIndex
+        
+        // Chooses a random direction.
+        // 0 - the cell above
+        // 1 - the cell below
+        // 2 - the cell to the left
+        // 3 - the cell to the right
+        // 4 - the cell up and to the right
+        // 5 - the cell up and to the left
+        // 6 - the cell down and to the left
+        // 7 - the cell down and to the right
+        // Each case checks to see the the index on the game board has already been used, corner cases (if any), and if the index is in bounds of the board.
         var direction = Int(arc4random_uniform(8))
         let firstPicked = direction
         while(true)
@@ -171,7 +208,12 @@ class game {
             default:
                 break
             }
+            // If the direction chosen does not work, try the next direction until we have gotten back to the original direction chosen and return false.
             direction += 1
+            if(direction > 7){
+                direction = 0
+            }
+            
             if(direction == firstPicked){
                 return (false, newPathArray)
             }
@@ -204,7 +246,7 @@ class game {
         {
             let pickWordRand = Int(arc4random_uniform(UInt32(self.dictionary.count)))
             let nextWord = dictionary[pickWordRand]
-            if(wordLengthTotal + nextWord.count > 98){
+            if(wordLengthTotal + nextWord.count > 94){
                 continue
             }
             words.append(scramble(word: nextWord))
