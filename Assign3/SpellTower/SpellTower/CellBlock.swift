@@ -8,10 +8,10 @@
 
 import Foundation
 class CellBlock{
-    var letter : Character?
+    var letter : String?
     var type : String?
     
-    init(letter: Character, type: String) {
+    init(letter: String, type: String) {
         self.letter = letter
         self.type = type
     }

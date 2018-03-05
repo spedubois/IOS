@@ -26,7 +26,156 @@ class game {
     */
     func populateGameBoard()
     {
+        var i = 0
+        while(i < 4)
+        {
+            let pickSpot = Int(arc4random_uniform(UInt32(108)))
+            if(gameBoard[pickSpot] != nil)
+            {
+                continue
+            }
+            gameBoard[pickSpot] = CellBlock(letter: "", type: "empty")
+            i+=1
+        }
         
+        for word in words
+        {
+            placeWordOnBoard(word: word)
+        }
+    }
+    
+    func placeWordOnBoard(word: String)
+    {
+        let charArray = Array(word)
+        var i = 0
+        var startFound = false
+        var indexToPlace = 0
+        while(!startFound)
+        {
+            let pickStart = Int(arc4random_uniform(109))
+            if(gameBoard[pickStart] != nil)
+            {
+                continue
+            }
+            startFound = true
+            indexToPlace = pickStart
+        }
+       
+        var path : [Int?] = Array(repeatElement(-1, count: word.count))
+        path = findWordPath(startIndex: indexToPlace, count: 0, pathArray: path as! [Int]).1
+        
+    }
+    
+    func findWordPath(startIndex: Int, count: Int, pathArray: [Int]) -> (Bool, [Int])
+    {
+        var newPathArray = pathArray
+        if(count == pathArray.count - 1)
+        {
+            if(gameBoard[startIndex] == nil && !newPathArray.contains(startIndex)){
+                newPathArray[count] = startIndex
+                return (true, newPathArray)
+            }
+            return (false, newPathArray)
+        }
+        newPathArray[count] = startIndex
+        var direction = Int(arc4random_uniform(8))
+        let firstPicked = direction
+        while(true)
+        {
+            if(direction > 7)
+            {
+                direction = 0
+            }
+            switch(direction)
+            {
+            case 0:
+                if(startIndex + 9 < 108 && gameBoard[startIndex+9] == nil && !pathArray.contains(startIndex+9))
+                {
+                    let recurs = findWordPath(startIndex: startIndex + 9, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 1:
+                if(startIndex - 9 >= 0 && gameBoard[startIndex-9] == nil && !pathArray.contains(startIndex-9))
+                {
+                    let recurs = findWordPath(startIndex: startIndex - 9, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 2:
+                if((startIndex + 1) % 9 != 0 && gameBoard[startIndex+1] == nil && !pathArray.contains(startIndex+1))
+                {
+                    let recurs = findWordPath(startIndex: startIndex + 1, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 3:
+                if(startIndex % 9 != 0 && gameBoard[startIndex-1] == nil && !pathArray.contains(startIndex-1))
+                {
+                    let recurs = findWordPath(startIndex: startIndex - 1, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 4:
+                if((startIndex + 1) % 9 != 0 && startIndex + 10 < 108 && gameBoard[startIndex+10] == nil && !pathArray.contains(startIndex+10))
+                {
+                    let recurs = findWordPath(startIndex: startIndex + 10, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 5:
+                if(startIndex % 9 != 0 && startIndex + 8 < 108 && gameBoard[startIndex+8] == nil && !pathArray.contains(startIndex+8))
+                {
+                    let recurs = findWordPath(startIndex: startIndex + 8, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 6:
+                if(startIndex % 9 != 0 && startIndex - 10 >= 0 && gameBoard[startIndex-10] == nil && !pathArray.contains(startIndex-10))
+                {
+                    let recurs = findWordPath(startIndex: startIndex - 10, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            case 7:
+                if((startIndex + 1) % 9 != 0 && startIndex - 8 >= 0 && gameBoard[startIndex-8] == nil && !pathArray.contains(startIndex-8))
+                {
+                    let recurs = findWordPath(startIndex: startIndex - 8, count: count + 1, pathArray: newPathArray)
+                    if(recurs.0)
+                    {
+                        return (true, recurs.1)
+                    }
+                    break
+                }
+            default:
+                break
+            }
+            direction += 1
+            if(direction == firstPicked){
+                return (false, newPathArray)
+            }
+        }      
     }
     
     /*
