@@ -11,8 +11,8 @@
 		780A8DCB2047757B00DC14FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DCA2047757B00DC14FF /* Assets.xcassets */; };
 		780A8DF2204775FB00DC14FF /* CellBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF1204775FB00DC14FF /* CellBlock.swift */; };
 		780A8DF42047777800DC14FF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF32047777800DC14FF /* Game.swift */; };
-		780A8DF62047798D00DC14FF /* Project 3 - Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */; };
 		780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DF72047799A00DC14FF /* Default-568h@2x.png */; };
+		78D04A4D204E11B7008DC38F /* Project 3 - Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		780A8DDF2047757B00DC14FF /* SpellTowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellTowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780A8DF1204775FB00DC14FF /* CellBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBlock.swift; sourceTree = "<group>"; };
 		780A8DF32047777800DC14FF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Project 3 - Dictionary.txt"; path = "../../../../../../Downloads/Project 3 - Dictionary.txt"; sourceTree = "<group>"; };
 		780A8DF72047799A00DC14FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Project 3 - Dictionary.txt"; path = "../../../../../Desktop/Project 3 - Dictionary.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 				780A8DF32047777800DC14FF /* Game.swift */,
 				780A8DC32047757B00DC14FF /* AppDelegate.swift */,
 				780A8DCA2047757B00DC14FF /* Assets.xcassets */,
-				780A8DF52047798D00DC14FF /* Project 3 - Dictionary.txt */,
 				780A8DCF2047757B00DC14FF /* Info.plist */,
+				78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */,
 			);
 			path = SpellTower;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				780A8DCB2047757B00DC14FF /* Assets.xcassets in Resources */,
-				780A8DF62047798D00DC14FF /* Project 3 - Dictionary.txt in Resources */,
 				780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */,
+				78D04A4D204E11B7008DC38F /* Project 3 - Dictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
