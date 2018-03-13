@@ -12,7 +12,7 @@
 		780A8DF2204775FB00DC14FF /* CellBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF1204775FB00DC14FF /* CellBlock.swift */; };
 		780A8DF42047777800DC14FF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A8DF32047777800DC14FF /* Game.swift */; };
 		780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780A8DF72047799A00DC14FF /* Default-568h@2x.png */; };
-		78D04A4D204E11B7008DC38F /* Project 3 - Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */; };
+		78A415CC20573B6900838EDA /* Project 3 - Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78A415CB20573B6800838EDA /* Project 3 - Dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		780A8DF1204775FB00DC14FF /* CellBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBlock.swift; sourceTree = "<group>"; };
 		780A8DF32047777800DC14FF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		780A8DF72047799A00DC14FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Project 3 - Dictionary.txt"; path = "../../../../../Desktop/Project 3 - Dictionary.txt"; sourceTree = "<group>"; };
+		78A415CB20573B6800838EDA /* Project 3 - Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Project 3 - Dictionary.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				780A8DC32047757B00DC14FF /* AppDelegate.swift */,
 				780A8DCA2047757B00DC14FF /* Assets.xcassets */,
 				780A8DCF2047757B00DC14FF /* Info.plist */,
-				78D04A4C204E11B7008DC38F /* Project 3 - Dictionary.txt */,
+				78A415CB20573B6800838EDA /* Project 3 - Dictionary.txt */,
 			);
 			path = SpellTower;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				780A8DCB2047757B00DC14FF /* Assets.xcassets in Resources */,
+				78A415CC20573B6900838EDA /* Project 3 - Dictionary.txt in Resources */,
 				780A8DF82047799A00DC14FF /* Default-568h@2x.png in Resources */,
-				78D04A4D204E11B7008DC38F /* Project 3 - Dictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
